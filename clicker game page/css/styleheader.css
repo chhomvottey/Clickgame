@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #241D25;
+  /* overflow: hidden; */
+}
+.play-background {
+  background: linear-gradient(180deg, #ff2d55 0%, #241d25 100%);
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+}
+.logo {
+  margin-top: -4%;
+  width: 150px;
+  margin-left: 5%;
+}
+.header-links {
+  margin-top: -5%;
+  display: flex;
+  gap: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  gap: 100px;
+}
+.header-links a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.header-links a:hover {
+  color: #ff2d55;
+}
+.cta-button {
+  margin-top: -5%;
+  background: rgba(8, 8, 8, 0.1);
+  color: white;
+  padding: 0.5rem 1rem; /* Adjusted padding for a smaller button */
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem; /* Reduced font size */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 150px; /* Adjusted width for a smaller button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-button:hover {
+  background: #e02d4e;
+}
+.heading {
+  color: white;
+  font-family: "Rye", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 1rem 150px;
+}
+.sub-heading {
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+  max-width: 600px;
+  margin-left: 150px;
+  line-height: 1.4;
+}
+.highlight {
+  color: #ff2d55;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+.image-container img {
+  max-width: 100%;
+  height: 550px;
+  margin-top: -15%;
+  margin-left: 10%;
+}
+
+/* Fullscreen overlay menu styles */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.menu-overlay span {
+  margin: 1rem 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Position menu icon on the right */
+.menu-icon {
+  display: none; /* Hide menu icon on desktop */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+/* Section Vision */
+h1{
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2{
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text{
+  line-height: 2;
+}
+
+/* End Vision */
+
+/* Sectsion Roadmap */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Main Title Styling */
+h1 {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  text-align: center;  /* Center text */
+}
+
+.about img {
+  max-width: 250px;
+  display: block;
+  margin: -70px auto 20px; /* Center the image and adjust margin */
+}
+
+.about p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #ddd;
+  text-align: center; /* Center text in the paragraph */
+}
+
+.about p span {
+  color: #ff5959;
+}
+
+/* Roadmap Section */
+.roadmap {
+  margin-top: 40px;
+  display: flex;            /* Use flexbox for the roadmap */
+  flex-direction: column;  /* Stack roadmap sections vertically */
+  align-items: center;     /* Center align the roadmap */
+  text-align: center;      /* Center text within roadmap */
+}
+
+.roadmap h1 {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roadmap-section {
+  margin-bottom: 20px;
+  max-width: 100%;  /* Ensure sections take full width */
+  padding: 0 20px;  /* Add padding for better spacing */
+}
+
+.roadmap-section h3 {
+  margin-right: 50%;
+  font-family: "Roboto", sans-serif;
+  color: #ff5959;
+  margin-bottom: 10px;
+}
+
+.roadmap-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.roadmap-section li {
+
+  margin-left: 10%;
+  font-size: 20px;
+  line-height: 1.6em;
+  color: #ddd;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  text-align: left; /* Keep text left aligned in the list */
+}
+
+
+/* End RoadMap */
+
+
+
+
+/* Section Footer */
+
+.cookie-consent-wrapper {
+  display: flex;
+}
+
+.cookie-consent-container {
+  background-color: #241D25;
+  width: 100%;
+  padding: 40px 80px 102px;
+}
+
+.cookie-content-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.cookie-info-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 80%;
+}
+
+.cookie-info-content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: start;
+  font: 16px Poppins, sans-serif;
+}
+
+.cookie-title {
+  color: rgb(255, 45, 85);
+  font-weight: 600;
+  line-height: 2;
+}
+
+.cookie-description {
+  color: #fff;
+  font: 400 16px/26px Inter, sans-serif;
+  margin: 22px 0 0;
+}
+
+.cookie-logo {
+  aspect-ratio: 6.99;
+  object-fit: contain;
+  width: 377px;
+  margin: 40px 0 0 11px;
+}
+
+.actions-column {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-left: 20px;
+}
+
+.cookie-actions {
+  display: flex;
+  margin-top: 13px;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  font: 400 16px Poppins, sans-serif;
+}
+
+.accept-button {
+  background-color: rgb(255, 45, 85);
+  padding: 18px 61px;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.reject-button {
+  margin-top: 30px;
+  padding: 18px 65px;
+  border: 1px solid rgb(255, 45, 85);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.settings-button {
+  margin: 20px 0 0 13px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
+/* End Footer */
+
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .header-links {
+    display: none; /* Hide header links on mobile */
+  }
+  .logo {
+    margin-top: -21%;
+    margin-right: 100%;
+    width: 100px;
+  }
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .play-background {
+    height: auto;
+  }
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heading,
+  .sub-heading {
+    font-size: 25px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .image-container img {
+    height: auto;
+    margin: 2rem 0;
+  }
+  .menu-icon {
+    margin-top: 2%;
+    display: flex; /* Show menu icon on mobile */
+  }
+
+
+
+  /* Footer */
+
+  .cookie-consent-container {
+    padding: 20px; /* Ensure padding is consistent */
+}
+
+.cookie-content-grid {
+    flex-direction: column; /* Stack vertically */
+    gap: 10px; /* Adjust gap for better spacing */
+}
+
+.cookie-info-column {
+    width: 100%; /* Full width for the info column */
+}
+
+.cookie-title {
+    font-size: 18px; /* Adjust title font size */
+}
+
+.cookie-description {
+    font-size: 14px; /* Adjust description font size */
+    line-height: 20px; /* Ensure text readability */
+}
+
+.cookie-logo {
+    width: 100%; /* Full width logo for mobile */
+    max-width: 200px; /* Limit the logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Adjusted margin */
+}
+
+.actions-column {
+    width: 100%; /* Full width for actions column */
+    margin-top: 10px; /* Space between columns */
+    align-items: center; /* Center align actions */
+}
+
+.accept-button,
+.reject-button,
+.settings-button {
+    width: 100%; /* Full width buttons */
+    padding: 12px; /* Adjusted padding for better touch targets */
+    margin: 5px 0; /* Space between buttons */
+    font-size: 16px; /* Set button font size */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: -15%;
+}
+
+.accept-button {
+    background-color: rgb(255, 45, 85);
+    border: none; /* Removed border */
+    color: #fff; /* White text color */
+}
+
+.reject-button {
+    background: transparent;
+    border: 1px solid rgb(255, 45, 85);
+    color: rgb(255, 45, 85); /* Set text color */
+}
+
+.settings-button {
+    background: transparent;
+    border: none; /* Removed border */
+    color: inherit; /* Use inherited text color */
+}
+
+  /* End Footer */
+}
+
+@media (min-width: 992px) {
+  .menu-icon {
+    display: none; /* Hide menu icon on desktop */
+  }
+}
